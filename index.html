@@ -1,0 +1,241 @@
+---
+layout: default
+title: Twoja zatoka danych
+---
+<!-- Text Header -->
+<header class="relative w-full mx-auto bg-cover bg-top bg-fixed"
+  style="background-image: url('./images/background.jpg');">
+  <section class="backdrop-blur-md">
+    <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+      <div class="relative flex-col items-center m-auto align-middle">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-1 lg:gap-24">
+          <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
+            <div class="text-center back">
+              <div>
+                <p class="text-4xl font-medium tracking-tight text-white text-center sm:text-5xl">
+                  Poznaj świat analizy danych
+                </p>
+                <p class="text-lg max-w-xl mt-4 text-center tracking-tight text-gray-200">
+                  Witaj na blogu poświęconym analizie danych! Znajdziesz tutaj wiele interesujących
+                  informacji na temat tego, jak wykorzystuje się narzędzia informatyczne do analizy ogromnych
+                  ilości danych. Poznasz najnowsze trendy, narzędzia i technologie związane z data science. Przygotuj
+                  się na fascynującą podróż po świecie analizy danych!
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-center">
+                <a href="blog.html"
+                  class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+                  Zacznij czytać
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--
+            <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
+              <img class="object-cover object-center w-full mx-auto bg-gray-600 lg:ml-auto rounded-lg" alt="hero"
+                src="./images/logo.png">
+            </div>
+          -->
+        </div>
+      </div>
+      <div>
+        <div class="pt-12 mx-auto lg:max-w-7xl">
+          <dl class="grid grid-cols-1 gap-6 space-y-0 text-center lg:gap-24 lg:grid-cols-3 lg:text-left">
+            <div>
+              <div>
+                <p class="mt-5 text-lg font-medium leading-6 text-white">
+                  Uczenie Maszynowe
+                </p>
+              </div>
+              <div class="mt-2 text-base text-gray-200">
+                Uczenie maszynowe polega na tworzeniu algorytmów i modeli, które mogą uczyć się wzorców z danych i
+                podejmować decyzje. Ma szerokie zastosowanie i jest szybko rozwijającą się dziedziną.
+              </div>
+            </div>
+            <div>
+              <div>
+                <p class="mt-5 text-lg font-medium leading-6 text-white">
+                  Analiza Danych
+                </p>
+              </div>
+              <div class="mt-2 text-base text-gray-200">
+                Analiza danych polega na wyciąganiu wniosków z surowych danych przy użyciu technik statystycznych,
+                eksploracji danych i uczenia maszynowego, umożliwiając podejmowanie decyzji opartych na danych dla
+                firm, badaczy i jednostek indywidualnych.
+              </div>
+            </div>
+            <div>
+              <div>
+                <p class="mt-5 text-lg font-medium leading-6 text-white">
+                  Wizualizacja Danych
+                </p>
+              </div>
+              <div class="mt-2 text-base text-gray-200">
+                Wizualizacja danych umożliwia łatwe interpretowanie i
+                komunikowanie złożonych danych. Umożliwia szybkie i klarowne przekazywanie wniosków, co czyni ją
+                niezbędnym narzędziem do analizy i podejmowania decyzji opartych na danych.
+              </div>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</header>
+
+<section class="flex items-center w-full">
+  <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-20 max-w-7xl">
+    <div class="max-w-2xl">
+      <p class="text-4xl text-black dark:text-gray-100">
+        Ostatnie artykuły.
+      </p>
+      <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600 dark:text-gray-400">
+        <span id="datespan"></span>
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-6 py-12 md:grid-cols-3">
+      <figure>
+        <img class="w-full bg-gray-200 "
+          src="images/stawkivsliczba.png"
+          alt="" width="1310" height="873">
+
+        <p class="mt-5 text-lg font-medium leading-6 text-black dark:text-gray-100">
+          Polscy nauczyciele w liczbach
+        </p>
+        <p class="mt-2">
+          <time class="text-xs text-gray-500 dark:text-gray-400" datetime="2023-03-16">
+            Kwieceń 16, 2023
+          </time>
+        </p>
+        <p class="mt-3 text-base text-gray-500 dark:text-gray-300">
+          Wizualizacja liczby nauczycieli w latach 2006-2022 oraz ich minimalnej stawki w Polsce w latach 2006-2023.
+        </p>
+        <div class="flex gap-3 mt-10 justify-left">
+          <a class="inline-flex items-center justify-center text-sm font-semibold text-black dark:text-gray-100 duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600"
+            href="post2.html">
+            <span>
+              Przejdź
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </figure>
+      <figure>
+        <img class="w-full bg-gray-200 "
+          src="images/logo.png"
+          alt="" width="1310" height="873">
+
+        <p class="mt-5 text-lg font-medium leading-6 text-black dark:text-gray-100">
+          Czym jest Data Science?
+        </p>
+        <p class="mt-2">
+          <time class="text-xs text-gray-500 dark:text-gray-400" datetime="2023-03-16">
+            Kwieceń 16, 2023
+          </time>
+        </p>
+        <p class="mt-3 text-base text-gray-500 dark:text-gray-300">
+          Data science to termin, który w ostatnich latach zyskał dużą popularność. Na rynku pracy pojawiły się tysiące
+          ofert prac dla danologów. A czym to jest i czym się zajmuje zostało opisane w poniższym artykule.
+        </p>
+        <div class="flex gap-3 mt-10 justify-left">
+          <a class="inline-flex items-center justify-center text-sm font-semibold text-black dark:text-gray-100 duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600"
+            href="post1.html">
+            <span>
+              Przejdź
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<hr class="dark:hidden">
+<section class="bg-gray-50 dark:bg-neutral-800">
+  <div class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+    <div id="faq">
+      <div class="max-w-2xl">
+        <p class="text-4xl text-black dark:text-gray-100">
+          Często zadawne pytania (FAQ).
+        </p>
+        <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600 dark:text-gray-400">
+          Kto pyta nie błądzi
+        </p>
+      </div>
+    </div>
+    <div class="space-y-12">
+      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
+        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
+          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
+            Co to jest za strona?
+          </span>
+        </div>
+        <div class="lg:col-span-2">
+          <p class="text-base text-gray-500 dark:text-gray-300">
+            Datachaint to projekt, który ma na celu rozwój branży danych w Polsce
+            oraz wymianę doświadczenia wśród polskich danologów, finansistów, programistów i innych specjalistów!
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
+        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
+          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
+            Po co nam dane?
+          </span>
+        </div>
+        <div class="space-y-4 lg:col-span-2">
+          <p class="text-base text-gray-500 dark:text-gray-300">
+            Dane są ważne, ponieważ pomagają nam lepiej zrozumieć i analizować różne aspekty naszego życia i świata.
+            Dają nam informacje, które pozwalają podejmować bardziej świadome decyzje i planować przyszłość. Mogą być
+            wykorzystywane do tworzenia nowych rozwiązań, produktów i usług, które poprawiają jakość życia ludzi.
+            Dlatego też zbieranie, przetwarzanie i analizowanie danych stało się niezbędnym narzędziem w wielu
+            dziedzinach, takich jak biznes, nauka, medycyna czy polityka.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
+        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
+          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
+            Jaki jest cel takiej strony?
+          </span>
+        </div>
+        <div class="lg:col-span-2">
+          <p class="text-base text-gray-500 dark:text-gray-300">
+            Naszym celem jest pomoc w zrozumieniu i wykorzystaniu ogromnego potencjału danych. Dajemy
+            możliwość dzielenia się wiedzą i doświadczeniem z innymi osobami zainteresowanymi tematyką danych.
+            Umożliwiamy prezentowanie różnych perspektyw i podejść do analizy danych. Chcemy zostać wielką biblioteką
+            dla osób,
+            które chcą nauczyć się jak korzystać z danych w swojej pracy lub biznesie.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
+        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
+          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
+            Chcesz dodać swój własny artykuł?
+          </span>
+        </div>
+        <div class="lg:col-span-2">
+          <p class="text-base text-gray-500 dark:text-gray-300">
+            Jeżeli chcesz dodać swój własny artykuł, wyślij go na maila <mark>datachaint@gmail.com.</mark>
+            Postaramy się jak najszybciej go wrzucić na naszą stronę.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let date = new Date().toLocaleDateString();
+  document.getElementById('datespan').innerHTML = date
+</script>
