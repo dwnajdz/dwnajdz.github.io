@@ -43,6 +43,9 @@ title: Raport o zarobkach
                         Spróbujemy również odpowiedzieć na pytanie, jak rozwija się popularność pracy zdalnej w tej
                         dziedzinie oraz jakie są jej dalsze perspektywy.
                     </p>
+                    <p class="text-2xl dark:text-gray-300 text-gray-600">Do wszystkich wizualizacji użyto danych dostępnych na stronie:
+                        <a href="https://www.kaggle.com/datasets/nguyenthicamlai/ai-ml-data-salaries" class="text-underline text-blue-500">
+                            https://www.kaggle.com/datasets/nguyenthicamlai/ai-ml-data-salaries</a>.</p>
                     <p class="text-2xl dark:text-gray-300">Pod każdym wykresem zamieszczono kod w języku Python, który
                         wygenerował dany wykres.</p>
                     <pre><code>import pandas as pd
@@ -50,6 +53,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import country_converter as coconv
                         
+# dane ze strony https://www.kaggle.com/datasets/nguyenthicamlai/ai-ml-data-salaries
 # Otwieramy plik z danymi i zamieniamy zawód ML Engineer na Machine Learning Engineer ponieważ to ten sam zawód
 data = pd.read_csv('data/salaries.csv')
 data.replace({'ML Engineer': 'Machine Learning Engineer'}, inplace=True)</code></pre>
