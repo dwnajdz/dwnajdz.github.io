@@ -8,18 +8,9 @@
   <meta name="author" content="datachaint">
   <meta name="description" content="Polskie forum zajmujące się analizą danych">
   <meta name="google-site-verification" content="IucEb3g3q-ovhBabaKx2h9miBzDfnl0Z34EKIVq1jdc" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W79LEFS13H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-W79LEFS13H');
-  </script>
 
   <!-- Tailwind -->
-  <link href="dist/output.css" rel="stylesheet">
+  <link href="dist/style.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 
@@ -90,26 +81,38 @@
         class="w-full mx-auto bg-gray-50 border-b opacity-95 dark:shadow-xl text-gray-500 dark:text-gray-100 dark:border-neutral-800 dark:bg-neutral-900">
         <div
           class="flex items-center justify-between w-full px-8 overflow-y-auto border-t whitespace-nowrap scroll-hidden md:px-6 dark:border-neutral-800">
-          <a class="py-4 pr-2 text-sm  transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
+          <a class="py-4 pr-2 text-md  transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
             href="index.html">
             Strona Główna
           </a>
-          <a class="px-2 py-4 text-sm transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
+          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
             href="blog.html">
             Blog
           </a>
-          <a class="px-2 py-4 text-sm transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="analiza.html">
-            Analiza Danych
-          </a>
-          <a class="px-2 py-4 text-sm transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="wizualizacja.html">
-            Wizualizacja Danych
-          </a>
-          <a class="px-2 py-4 text-sm transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="nauka.html">
+          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
+            href="dict.html">
             Nauka
           </a>
+          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
+            href="kariera.html">
+            Kariera
+          </a>
+          <!--
+          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
+            href="">
+            Kalkulator Zarobków
+          </a>
+          -->
+          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
+            href="analiza.html">
+            Raport branży Data Science
+          </a>
+            <!--
+          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
+            href="">
+            Quiz
+          </a>
+             -->
           <button id="theme-toggle" type="button"
             class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
             <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
@@ -155,14 +158,24 @@
                   </a>
                 </li>
                 <li>
-                  <a href="nauka.html" class="text-sm hover:text-blue-600">
+                  <a href="dict.html" class="text-sm hover:text-blue-600">
                     Nauka
                   </a>
                 </li>
                 <li>
-                  <a href="wizualizacja.html" class="text-sm hover:text-blue-600">
-                    Wizualizacja
+                  <a href="kariera.html" class="text-sm hover:text-blue-600">
+                    Zawody w branży danych
                   </a>
+                  <a href="analiza.html" class="text-sm hover:text-blue-600">
+                    Raport z branży danych
+                  </a>
+                </li>
+                <li>
+                  <!--
+                  <a href="" class="text-sm hover:text-blue-600">
+                    Quiz
+                  </a>
+                  -->
                 </li>
               </ul>
             </div>
@@ -177,7 +190,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="index.html#faq" class="text-sm hover:text-blue-600">
+                  <a href="index.html#kontakt" class="text-sm hover:text-blue-600">
                     Kontakt
                   </a>
                 </li>
@@ -189,6 +202,7 @@
               </ul>
             </div>
           </div>
+          <!--
           <div class="hidden lg:justify-end md:grid md:grid-cols-1">
             <div class="w-full mt-12 md:mt-0">
               <div class="mt-8 lg:justify-end xl:mt-0">
@@ -206,7 +220,7 @@
                         placeholder="Wpisz swój email..." required=""><button type="button"
                         class="items-center inline-flex  justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
                         <div style="position: relative"></div>
-                        Subskrybuj<!-- -->
+                        Subskrybuj
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                           aria-hidden="true" class="w-4 h-auto ml-2">
                           <path fill-rule="evenodd"
@@ -219,7 +233,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
