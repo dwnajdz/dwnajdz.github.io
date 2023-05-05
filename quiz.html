@@ -1,0 +1,667 @@
+---
+layout: default
+title: Data science - czym jest?
+---
+
+<section id="topone">
+    <div class="items-center px-8 py-12 mx-auto max-w-7xl lg:px-16 md:px-12 lg:py-24">
+        <div class="justify-center w-full text-center lg:p-10 max-auto">
+            <div class="justify-center w-full mx-auto">
+
+                <p class="mt-8 text-5xl font-medium tracking-tighter text-black dark:text-white">
+                    Quiz predyspozycji zawodowych
+                </p>
+                <p class="max-w-xl mx-auto mt-4 text-lg tracking-tight text-gray-600 dark:text-gray-400">
+                    Sprawdź jaki zawód związany z danymi jest dla ciebie najbardziej odpowiedni, biorąc udział w krótkim
+                    teście
+                </p>
+            </div>
+            <div class="flex flex-col items-center justify-center max-w-xl gap-3 mx-auto mt-10 lg:flex-row">
+                <a href="#start"
+                    class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+                    Zacznij Quiz
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- component -->
+<form id="QuizForm">
+    <div class="flex flex-col justify-center m-auto">
+        <div class="flex flex-col justify-center text-center md:flex-row md:text-left">
+            <div class="flex flex-col justify-center max-w-2xl p-10 space-y-12">
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl">
+                        <span class="font-mono text-sm dark:text-gray-300" aria-hidden="true">
+                            01
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Czy masz wykształcenie w dziedzinie matematyki lub statystyki?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Czy masz wykształcenie w dziedzinie matematyki lub statystyki?
+                            </legend>
+
+                            <div class="flex items-center mb-2">
+                                <input id="q1" type="radio" name="wyksztalcenie" value="tak"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                                    checked>
+                                <label for="q1t"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tak
+                                </label>
+                            </div>
+
+                            <div class="flex items-center mb-2">
+                                <input id="q1" type="radio" name="wyksztalcenie" value="nie"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="q1n"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            02
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Jaki poziom wiedzy posiadasz na temat języków programowania?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">programowanie_stopien</legend>
+
+                            <div class="flex items-center mb-2">
+                                <input id="2q1" type="radio" name="programowanie_stopien" value="poczatek"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                                    checked>
+                                <label for="2q1"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Początkujący
+                                </label>
+                            </div>
+
+                            <div class="flex items-center mb-2">
+                                <input id="2q2" type="radio" name="programowanie_stopien" value="s_zaawansowany"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="2q2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Średnio zaawansowany
+                                </label>
+                            </div>
+
+                            <div class="flex items-center mb-2">
+                                <input id="2q3" type="radio" name="programowanie_stopien" value="zaawansowany"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="2q3"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Zaawansowany
+                                </label>
+                            </div>
+
+                            <div class="flex items-center mb-2">
+                                <input id="2q4" type="radio" name="programowanie_stopien" value="none"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="2q4"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie posiadam wiedzy na ten temat
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+
+
+
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            03
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Czy posiadasz umiejętności w pracy z dużymi zbiorami danych?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Big Data</legend>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="umiejetnosc_big_data" value="tak"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tak
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="umiejetnosc_big_data" value="nie"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            04
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Czy posiadasz umiejętności w analizie danych?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Analiza</legend>
+                            <div class="flex items-center mb-2">
+                                <input id="analiza" type="radio" name="umiejetnosc_analiza" value="tak"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="analiza"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tak
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="analiza" type="radio" name="umiejetnosc_analiza" value="nie"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="analiza"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            05
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Jaki jest Twój poziom umiejętności w wizualizacji danych?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Odpowiedzi</legend>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="wizualizacja" value="poczatek"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Początkujący
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="wizualizacja" value="s_zaawansowany"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Średnio zaawansowany
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="wizualizacja" value="zaawansowany"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Zaawansowany
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="wizualizacja" value="none"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie posiadam umiejętności w tym zakresie
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            06
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Czy masz doświadczenie w pracy z klientem?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Odpowiedzi</legend>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="z_klientem" value="tak"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tak
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="z_klientem" value="nie"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            07
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Czy posiadasz umiejętności w pracy z uczeniem maszynowym?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Odpowiedzi</legend>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="doswiadczenie_ml" value="tak"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tak
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="doswiadczenie_ml" value="nie"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            08
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Czy masz doświadczenie w pracy z chmurą (np. AWS, Azure, Google Cloud)?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Odpowiedzi</legend>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="chmura" value="tak"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tak
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="chmura" value="nie"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            09
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Jaki rodzaj pracy preferujesz?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Odpowiedzi</legend>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="praca" value="rid"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Badania i rozwój
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="praca" value="analiza"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Analiza danych
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="praca" value="wizualizacja"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Wizualizacja danych
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="praca" value="uczenie_maszynowe"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Projektowanie modeli uczenia maszynowego
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="radio" name="praca" value="inne"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label for="country-option-2"
+                                    class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Inne
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span class="inline-flex items-center text-black rounded-xl dark:text-gray-300">
+                        <span class="font-mono text-sm" aria-hidden="true">
+                            10
+                        </span>
+                    </span>
+                    <div class="mt-3 text-3xl tracking-tighter text-black dark:text-white">
+                        Jakie narzędzia i technologie związane z data science znasz i potrafisz obsługiwać?
+                    </div>
+                    <div class="mt-4 text-gray-500 ml-5">
+                        <fieldset>
+                            <legend class="sr-only">Narzedzia</legend>
+
+                            <div class="flex items-center mb-2">
+                                <input id="3q1" type="checkbox" name="narzedzia" value="python"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                                    checked>
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Python
+                                </label>
+                            </div>
+
+                            <div class="flex items-center mb-2">
+                                <input id="3q2" type="checkbox" name="narzedzia" value="rlang"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    R
+                                </label>
+                            </div>
+
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="checkbox" name="narzedzia" value="sql"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    SQL
+                                </label>
+                            </div>
+
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="checkbox" name="narzedzia" value="excel"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Excel
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="checkbox" name="narzedzia" value="tableau"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tableau
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="checkbox" name="narzedzia" value="powerbi"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    PowerBI
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="checkbox" name="narzedzia" value="apachesh"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Apache Hadoop / Apache Spark
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="checkbox" name="narzedzia" value="keras"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Tensorflow / Keras / PyTorch
+                                </label>
+                            </div>
+                            <div class="flex items-center mb-2">
+                                <input id="country-option-2" type="checkbox" name="narzedzia" value="none"
+                                    class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="block ml-2 text-2xl font-medium text-gray-900 dark:text-gray-300">
+                                    Nie znam żadnego narzędzia
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </article>
+                <button
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    type="submit" id="submit_button">Zakończ quiz</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<section>
+    <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+        <div class="relative flex-col items-start m-auto align-middle">
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+                <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
+                    <div class="max-w-xl text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl font-medium tracking-tight text-black sm:text-4xl" id="wynik_nazwa">
+                            </p>
+                            <p class="text-green-600" id="wynik_zarobki"></p>
+                            </p>
+                            <p class="mt-3 text-base text-gray-500" id="wynik_opis">
+                            </p>
+                            <p class="mt-3 text-base text-indigo-500" id="wynik_narzedzia">
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start"
+                            id="wynik_link">
+                        </div>
+                    </div>
+                </div>
+                <div class="order-first block w-full mt-12 aspect-square lg:mt-0" id="wynik_zdjecie">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    const form = document.getElementById("QuizForm");
+
+    form.addEventListener(
+        "submit",
+        (event) => {
+            const data = new FormData(form);
+            let output = "";
+            for (const entry of data) {
+                output = `${output}${entry[0]}=${entry[1]};`;
+            }
+            console.log(output);
+            event.preventDefault();
+            ProcessQuiz(output);
+        },
+        false
+    );
+
+    function ProcessQuiz(FormData) {
+        const userResponses = FormData.split(';');
+        const pointsPerProfession = {
+            "data scientist": 0,
+            "data analyst": 0,
+            "machine learning engineer": 0,
+            "data architect": 0,
+            "data engineer": 0,
+            "big data engineer": 0,
+            "business intelligence analyst": 0,
+            "statystyk": 0,
+        };
+
+        for (let i = 0; i < userResponses.length; i++) {
+            let splitted = userResponses[i].split('=');
+            let question = splitted[0]
+            let answer = splitted[1];
+
+            if (question == 'narzedzia' && answer != 'none') {
+                Object.keys(pointsPerProfession).forEach(function (profession) {
+                    pointsPerProfession[profession] += 1;
+                });
+                continue;
+            }
+
+            switch (i) {
+                case 0:
+                    if (answer == 'nie') break;
+                    pointsPerProfession['data scientist'] += 2;
+                    pointsPerProfession['data analyst'] += 1;
+                    pointsPerProfession['machine learning engineer'] += 2;
+                    pointsPerProfession['data architect'] += 2;
+                    pointsPerProfession['data engineer'] += 1;
+                    pointsPerProfession['big data engineer'] += 1;
+                    pointsPerProfession['business intelligence analyst'] += 1;
+                    pointsPerProfession['statystyk'] += 4;
+                    break;
+                case 1:
+                    let points_1 = 0;
+                    switch (answer) {
+                        case 'poczatek':
+                            points_1 = 1;
+                            break;
+                        case 's_zaawansowany':
+                            points_1 = 2;
+                            break;
+                        case 'zaawansowany':
+                            points_1 = 3;
+                            break;
+                        default:
+                            break;
+                    }
+                    pointsPerProfession['data scientist'] += points_1;
+                    pointsPerProfession['data analyst'] += points_1;
+                    pointsPerProfession['machine learning engineer'] += points_1;
+                    pointsPerProfession['data engineer'] += points_1;
+                    pointsPerProfession['big data engineer'] += points_1;
+                    pointsPerProfession['statystyk'] += points_1;
+                case 2:
+                    if (answer == 'nie') break;
+                    pointsPerProfession['data scientist'] += 1;
+                    pointsPerProfession['data analyst'] += 1;
+                    pointsPerProfession['machine learning engineer'] += 1;
+                    pointsPerProfession['data architect'] += 1;
+                    pointsPerProfession['data engineer'] += 1;
+                    pointsPerProfession['big data engineer'] += 4;
+                    pointsPerProfession['business intelligence analyst'] += 1;
+                    pointsPerProfession['statystyk'] += 1;
+                case 3:
+                    if (answer == 'nie') break;
+                    pointsPerProfession['data scientist'] += 2;
+                    pointsPerProfession['data analyst'] += 2;
+                    pointsPerProfession['machine learning engineer'] += 1;
+                    pointsPerProfession['data architect'] += 1;
+                    pointsPerProfession['data engineer'] += 2;
+                    pointsPerProfession['big data engineer'] += 1;
+                    pointsPerProfession['business intelligence analyst'] += 2;
+                    pointsPerProfession['statystyk'] += 1;
+                case 4:
+                    let points_2 = 0;
+                    switch (answer) {
+                        case 'poczatek':
+                            points = 1;
+                        case 's_zaawansowany':
+                            points = 2;
+                        case 'zaawansowany':
+                            points = 3;
+                        default:
+                            break;
+                    }
+                    pointsPerProfession['data scientist'] += points_2;
+                    pointsPerProfession['data analyst'] += points_2;
+                    pointsPerProfession['machine learning engineer'] += points_2;
+                    pointsPerProfession['data engineer'] += points_2;
+                    pointsPerProfession['business intelligence analyst'] += points_2;
+                    pointsPerProfession['statystyk'] += points_2;
+                case 5:
+                    if (answer == 'nie') break;
+                    pointsPerProfession['data scientist'] += 1;
+                    pointsPerProfession['data analyst'] += 1;;
+                    pointsPerProfession['business intelligence analyst'] += 2;
+                    pointsPerProfession['statystyk'] += 1;
+                case 6:
+                    if (answer == 'nie') break;
+                    pointsPerProfession['data scientist'] += 2;
+                    pointsPerProfession['machine learning engineer'] += 3;
+                case 7:
+                    if (answer == 'nie') break;
+                    pointsPerProfession['data scientist'] += 1;
+                    pointsPerProfession['machine learning engineer'] += 1;
+                    pointsPerProfession['data engineer'] += 1;
+                    pointsPerProfession['big data engineer'] += 1;
+                case 8:
+                    switch (answer) {
+                        case 'rid':
+                            pointsPerProfession['data scientist'] += 2;
+                        case 'analiza':
+                            pointsPerProfession['data analyst'] += 2;
+                        case 'wizualizacja':
+                            pointsPerProfession['business intelligence analyst'] += 2;
+                            pointsPerProfession['statystyk'] += 2;
+                        case 'uczenie_maszynowe':
+                            pointsPerProfession['machine learning engineer'] += 2;
+                        default:
+                            pointsPerProfession['data engineer'] += 2;
+                            pointsPerProfession['big data engineer'] += 2;
+                            pointsPerProfession['data architect'] += 2;
+                            break;
+                    }
+                default:
+                    break;
+            }
+        }
+
+        const result = Object.entries(pointsPerProfession).reduce((a, b) => a[1] > b[1] ? a : b)[0];
+        console.log(pointsPerProfession);
+        document.getElementById("QuizForm").remove();
+        document.getElementById("topone").remove();
+        switch (result) {
+            case 'data scientist':
+                document.getElementById("wynik_nazwa").insertAdjacentHTML("afterbegin", "Danolog (Data Scientist)");
+                document.getElementById("wynik_zarobki").insertAdjacentHTML("afterbegin", "12000 - 22000 PLN");
+                document.getElementById("wynik_opis").insertAdjacentHTML("afterbegin", "Data Scientist jest odpowiedzialny za zbieranie, analizowanie i interpretowanie dużej ilości danych w celu identyfikacji trendów, wzorców i wskazówek, które mogą pomóc firmom podejmować informowane decyzje. ");
+                document.getElementById("wynik_narzedzia").insertAdjacentHTML("afterbegin", "Python (Pandas, NumPy, SciPy), R, Tableau, SQL, scikit-learn,");
+                document.getElementById("wynik_link").insertAdjacentHTML("afterbegin", '<a href="kariera_data_scientist.html"class="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">Dowiedz się o nim więcej<span aria-hidden="true"> → </span></a>');
+                document.getElementById("wynik_zdjecie").insertAdjacentHTML("afterbegin", '<img class="object-cover object-center w-full mx-auto bg-gray-300 border lg:ml-auto" alt="hero" src="images/jobs/scientist.png">');
+                break;
+            case 'data analyst':
+            case 'machine learning engineer':
+        }
+    }
+
+</script>
