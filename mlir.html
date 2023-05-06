@@ -62,13 +62,19 @@ title: MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji
                             że każdy może go używać i modyfikować, aby dostosować go do swoich potrzeb.
                         </p>
                         <h3 class="dark:text-white">To oznacza, że aplikacja na windows 10, po zastosowaniu MLIR będzie działała na linuxie?</h3>
-                        <p>Nie, MLIR nie umożliwia bezpośredniego uruchamiania aplikacji napisanych w jednym systemie operacyjnym na innym systemie operacyjnym. 
-                            MLIR jest narzędziem do optymalizacji i przetwarzania kodu programów, które może pomóc programistom w pisaniu kodu, 
-                            który działa lepiej na różnych platformach sprzętowych, 
-                            ale nie umożliwia bezpośredniego uruchamiania aplikacji na różnych systemach operacyjnych.
+                        <p>MLIR sam w sobie nie służy do przenoszenia aplikacji między różnymi systemami operacyjnymi, 
+                            a jedynie do optymalizacji i generowania kodu.
+                             <br><br>
+                            Jeśli chodzi o przenoszenie aplikacji między systemami operacyjnymi Windows 10 a Linux, to jest to możliwe, ale wymaga to modyfikacji kodu aplikacji tak, aby działała na nowym systemie. 
+                            Przenoszenie aplikacji jest procesem skomplikowanym i zależnym od wielu czynników, takich jak zależności bibliotek i różnice w sposobie działania systemów operacyjnych.
                             <br><br>
-                            Uruchomienie aplikacji na różnych systemach operacyjnych wymaga napisania kodu, który jest kompatybilny z danym systemem operacyjnym i jego architekturą sprzętową. 
-                            Jednak MLIR może pomóc w optymalizacji kodu, aby działał szybciej i bardziej wydajnie na różnych systemach operacyjnych i architekturach sprzętowych.</p>
+                            Jeśli Twoja aplikacja została napisana w języku, który jest przenośny między systemami operacyjnymi, takim jak C++, Java lub Python, 
+                            to przenoszenie jej na inny system operacyjny może być prostsze. Jednakże, 
+                            jeśli Twoja aplikacja korzysta z bibliotek specyficznych dla systemu operacyjnego lub zależy od innych czynników, 
+                            takich jak dostępność konkretnych sterowników sprzętu, to przenoszenie może być bardziej skomplikowane.
+                            <br><br>
+                            Podsumowując, MLIR nie zapewnia bezpośredniego wsparcia dla przenoszenia aplikacji między Windows 10 a Linux. 
+                            Przenoszenie aplikacji wymaga analizy i modyfikacji kodu aplikacji, a także dostosowania jej do różnic między systemami operacyjnymi.</p>
                         <h2 class="dark:text-white">Prosty kod MLIR w Pythonie</h2>
                         <p>Aby zastosować MLIR w Pythonie, można skorzystać z biblioteki PyMLIR. PyMLIR jest
                             interfejsem Pythona do MLIR i pozwala na łatwe przetwarzanie i optymalizację kodu
