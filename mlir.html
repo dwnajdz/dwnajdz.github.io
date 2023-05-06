@@ -47,9 +47,9 @@ title: MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji
                             umożliwia przetwarzanie kodu na każdym z tych poziomów, co umożliwia dostosowanie go do
                             różnych platform sprzętowych.
                             <br><br>
-                            Działanie MLIR opiera się na modularnej strukturze, która umożliwia programistom dodawanie
-                            nowych transformacji i optymalizacji do frameworku. Moduły te są nazywane "dialects" i
-                            umożliwiają dostosowanie MLIR do różnych języków programowania i architektur sprzętowych.
+                            MLIR jest modułowy, co oznacza, że programiści mogą dodawać nowe transformacje i optymalizacje do frameworku. 
+                            Moduły te nazywane są "dialects" (dialektami) i umożliwiają dostosowanie 
+                            MLIR do różnych języków programowania i architektur sprzętowych.
                             <br><br>
                             MLIR umożliwia programistom tworzenie programów w taki sposób, aby działały one szybciej i
                             wydajniej na różnych urządzeniach. Dzięki MLIR możliwe jest na przykład automatyczne
@@ -58,9 +58,17 @@ title: MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji
                             <br><br>
                             MLIR składa się z różnych narzędzi i bibliotek, takich jak kompilatory, optymalizatory i
                             symulatory, które umożliwiają programistom przetwarzanie i optymalizowanie kodu dla różnych
-                            architektur sprzętowych. MLIR jest dostępny jako otwarte oprogramowanie (open source), co
-                            umożliwia jego rozwijanie i modyfikowanie przez społeczność programistów.
+                            architektur sprzętowych.  MLIR jest dostępny jako otwarte oprogramowanie (open source), co oznacza, 
+                            że każdy może go używać i modyfikować, aby dostosować go do swoich potrzeb.
                         </p>
+                        <h3 class="dark:text-white">To oznacza, że aplikacja na windows 10, po zastosowani MLIR będzie działała na linuxie?</h3>
+                        <p>Nie, MLIR nie umożliwia bezpośredniego uruchamiania aplikacji napisanych w jednym systemie operacyjnym na innym systemie operacyjnym. 
+                            MLIR jest narzędziem do optymalizacji i przetwarzania kodu programów, które może pomóc programistom w pisaniu kodu, 
+                            który działa lepiej na różnych platformach sprzętowych, 
+                            ale nie umożliwia bezpośredniego uruchamiania aplikacji na różnych systemach operacyjnych.
+                            <br><br>
+                            Uruchomienie aplikacji na różnych systemach operacyjnych wymaga napisania kodu, który jest kompatybilny z danym systemem operacyjnym i jego architekturą sprzętową. 
+                            Jednak MLIR może pomóc w optymalizacji kodu, aby działał szybciej i bardziej wydajnie na różnych systemach operacyjnych i architekturach sprzętowych.</p>
                         <h2 class="dark:text-white">Prosty kod MLIR w Pythonie</h2>
                         <p>Aby zastosować MLIR w Pythonie, można skorzystać z biblioteki PyMLIR. PyMLIR jest
                             interfejsem Pythona do MLIR i pozwala na łatwe przetwarzanie i optymalizację kodu
