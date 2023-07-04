@@ -1,0 +1,212 @@
+---
+layout: default
+title: Mojo 🔥 - nowy język programowania, łatwy jak python szybki jak C.
+---
+<div class="mx-auto flex flex-wrap">
+    <!-- Post Section -->
+    <section class="w-screen items-center">
+        <article class="max-w-none prose w-full">
+            <div class="min-h-screen py-8 flex flex-col justify-center relative overflow-hidden lg:py-12">
+                <div class="relative w-full px-6 py-12 md:max-w-6xl md:mx-auto lg:max-w-screen lg:pt-16 lg:pb-28">
+                    <div class="max-w-prose mx-auto lg:text-lg">
+
+                        <p class="mt-2">
+                            <time class="text-md text-gray-500 dark:text-white" datetime="2023-05-6">
+                                Czerwiec 25, 2023
+                            </time>
+                            <time class="ml-2 dark:text-gray-400" title="Czas przeczytania artykułu">13 min</time>
+                        </p>
+                        <h1 class="dark:text-gray-100">Mojo 🔥 - nowy język programowania, łatwy jak python szybki jak C
+                        </h1>
+                    </div>
+                    <div class="mt-8 prose prose-slate mx-auto lg:prose-lg dark:text-gray-300">
+                        <p class="lead dark:text-zinc-400">Ostatnimi czasy na rynku pojawiła się informacja o nowym
+                            języku programowania, który łączy w sobie prostotę Pythona, a jednocześnie ma być szybki jak
+                            C.</p>
+                        Wczesny dostęp do Mojo: <a href="https://www.modular.com/get-started" class="dark:text-blue-300"
+                            target="_blank">https://www.modular.com/get-started</a>
+                        <p>Treść artykułu:</p>
+                        <ol>
+                            <li><b>Dlaczego python jest zły?</b></li>
+                            <li><b>Global Interpreter Lock (GIL)</b></li>
+                            <li><b>Historia Mojo 🔥</b></li>
+                            <li><b>Dlaczego Mojo?</b></li>
+                            <li><b>MLIR (Multi-Level Intermediate Representation), kompilator
+                                przyszłości</b></li>
+                            <li><b>Podstawy Mojo</b>
+                                <ul>
+                                    <li>Zmienne</li>
+                                    <li>Funkcje</li>
+                                    <li>Struktura (struct)</li>
+                                    <li>Integracja z Pythonem</li>
+                                </ul></li>
+                            <li><b>Podsumowanie</b></li>
+                        </ol>
+                        <h2 class="dark:text-white">Dlaczego python jest zły?</h2>
+                        <p>Według firmy modular, czyli firmy odpowiedzialnej za język Mojo, Python ma znane problemy
+                            takie jak
+                            słaba wydajność niskopoziomowa i mechanizm GIL w języku CPython (wyjaśnione poniżej). Choć
+                            istnieje wiele aktywnych projektów, które mają na celu naprawę tych niedogodności, to jednak
+                            problemy te mają głębsze konsekwencje i szczególnie wpływają na dziedzine sztucznej
+                            inteligencji. A w roku 2023, czyli roku sztucznej inteligencjii te ograniczenia mają dalszy
+                            wpływ.</p>
+                        <h3 class="dark:text-white">Global Interpreter Lock (GIL)</h3>
+                        <p>GIL to skrót od Global Interpreter Lock, jest to mechanizm
+                            stosowany w implementacji CPython języka Python. GIL zapewnia, że tylko jedna linia
+                            wykonywana jest w tym samym czasie w obrębie jednego procesu interpretacji Pythona, co ma na
+                            celu zapobieganie problemom z synchronizacją dostępu do zasobów współdzielonych w
+                            wielowątkowych programach. Oznacza to, że w jednym momencie tylko jeden wątek może wykonywać
+                            kod Pythona w ramach jednego procesu, co może wpłynąć negatywnie na wydajność programów
+                            wielowątkowych. </p>
+                        <h2 class="dark:text-white">Historia Mojo 🔥 </h2>
+                        <p>Modular zaczynał swoją działalność bez zamiaru tworzenia nowego języka programowania. Jednak
+                            podczas budowania platformy, która miała na celu zjednoczenie infrastruktury uczenia
+                            maszynowego i sztucznej inteligencji na całym świecie. Zauważono wtedy, że zaprogramowanie
+                            tego wszystkiego jest zbyt trudne.
+                            Chciano więc stworzyć innowacyjny i skalowalny model programowania,
+                            który mógłby być skierowany do <b>akceleratorów [1]</b> i innych systemów,
+                            powszechnych w uczeniu maszynowym. Oznaczało to potrzebę stworzenia języka programowania,
+                            który oferowałby silne <b>metaprogramowanie [2]</b> podczas tworzenia kodu, a także
+                            umożliwiłby zastosowanie różnych
+                            technik kompilacji, buforowanie procesu kompilacji oraz wiele innych funkcji, których
+                            brakowało w istniejących językach programowania.
+                        </p>
+                        <p><b>akcelerator [1]</b> - jest to specjalnie zaprojektowane urządzenie służące do
+                            przyśpieszenia obliczeń w konkretnych dziedzinach. Tutaj chodzi o akceleratory używane w
+                            uczeniu maszynowym i sztucznej inteligencji, czyli procesory graficzne (GPU) lub specjalne
+                            procesory do AI (TPU).</p>
+                        <p><b>metaprogramowanie [2]</b> - technika programowania, która umożliwia generowanie lub
+                            modyfikację kodu programu w czasie jego wykonania. Jest szczególnie przydatne w programach o
+                            złożonej strukturze i wykorzystywane w językach skryptowych. Metaprogramowanie jest
+                            stosowane w Pythonie i jest to jedna z cech, które czynią Python bardzo elastycznym językiem
+                            programowania. </p>
+
+                        <h2 class="dark:text-white">Dlaczego Mojo?</h2>
+                        <p>Mojo łączy prostotę języka Python z wydajnością języków takich jak C++ czy Rust. Dodatkowo,
+                            Mojo umożliwia korzystanie z popularnych bibliotek Pythona, takich jak numpy, pandas czy
+                            matplotlib. Dzięki temu programiści mogą tworzyć czytelne i zwięzłe programy, które osiągają
+                            wysoką wydajność, a jednocześnie mają dostęp do szerokiego zakresu funkcjonalności
+                            oferowanej przez te biblioteki.
+                        </p>
+
+                        <h2 class="dark:text-white">MLIR (Multi-Level Intermediate Representation), kompilator
+                            przyszłości</h2>
+                        <p>
+                        <h3 class="dark:text-white">MLIR w prostych słowach</h3>
+                        MLIR to narzędzie, które pomaga programistom tworzyć programy, które działają na różnych
+                        rodzajach sprzętu (np. komputery, smartfony, tablety). Działa ono na zasadzie tzw.
+                        reprezentacji pośredniej, co oznacza, że przetwarza kod programu na taki, który łatwo można
+                        dopasować do różnych rodzajów sprzętu. Dzięki temu programy działają szybciej i wydajniej na
+                        różnych urządzeniach, bez konieczności ręcznej modyfikacji kodu dla każdego z nich.
+                        <br>
+                        <h3 class="dark:text-white">MLIR szczegółowo</h3>
+                        <p><b>Jeżeli chcesz dowiedzieć się o MLIR więcej, przeczytaj ten artykuł -> <a href="mlir.html"
+                                    class="text-blue-500 underline" target="_blank">MLIR - rewolucyjne narzędzie
+                                    stosowane w systemach AI</a>.</b></p>
+
+                        <h2 class="dark:text-white">Podstawy Mojo</h2>
+                        <p>Są to tylko podstawy, mojo pozwala na o wiele wiele więcej (jak np. RayTracing, mnożenie
+                            macierzy, zbiór mandelbrota czy obsługe pamięci rodem z C).
+                        </p>
+                        <h3 class="dark:text-gray-200">Zmienne</h3>
+                        <ul>
+                            <li>
+                                <p><b>let</b> - jest zmienną stałą, co oznacza, że po przypisaniu wartości nie może być
+                                    ona zmieniona.</p>
+                            </li>
+                            <li>
+                                <p><b>var</b> - działa podobnie jak w języku Python. Może być ona przypisana do dowolnej
+                                    wartości i można ją później zmieniać.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <pre><code>def your_function(a, b):
+    let c = a
+    var e = a
+    c = b  # zwroci error: c is immutable
+    e = b
+
+    if c != b:
+        let d = b
+        print(d)
+                            
+your_function(2, 3)</code></pre>
+
+                        <h3 class="dark:text-gray-200">Funkcje</h3>
+                        <ul>
+                            <li>
+                                <p><b>def</b> - działa podobnie jak w przypadku Pythona. Umożliwia deklarację funkcji i
+                                    jej implementację. Przykład użycia:
+                                <pre><code>def add(a, b):
+    return a + b</code></pre>
+                                </p>
+                            </li>
+                            <li>
+                                <p><b>fn</b> - służy do definiowania funkcji, które wymagają określenia typu danych dla
+                                    argumentów. W ten sposób możemy precyzyjnie określić, jakie typy danych powinny być
+                                    przekazywane do funkcji. Na przykład:
+                                <pre><code>fn add(a: Int, b: Int) -> Int:
+    return a + b</code></pre>
+                                </p>
+                            </li>
+                        </ul>
+                        </p>
+                        <h3 class="dark:text-gray-200">Struktura (struct)</h3>
+                        <p>Typ struct w języku Mojo jest podobny do struktur znanych z innych języków programowania,
+                            takich jak C, C++ czy Go. Istotną różnicą w porównaniu do klas jest konieczność jawnego
+                            zadeklarowania wszystkich właściwości zmiennych wewnątrz struktury za pomocą deklaracji var
+                            lub let. Ta jasna deklaracja umożliwia kompilatorowi dokładne rozplanowanie i dostęp do
+                            wartości w pamięci bez konieczności korzystania z pośrednictwa. Dzięki temu struktury w Mojo
+                            mogą być efektywnie wykorzystywane do przechowywania danych i manipulacji nimi w sposób
+                            zoptymalizowany pod kątem wydajności.
+
+                        </p>
+                        <pre><code>struct MyPair:
+    var first: Int
+    var second: Int
+    
+    fn __init__(inout self, first: Int, second: Int):
+        self.first = first
+        self.second = second   
+
+    # funkcja ktora pozwala uzywac operatora < do porównywania zmiennych
+    fn __lt__(self, rhs: MyPair) -> Bool:
+        return self.first < rhs.first or
+            (self.first == rhs.first and
+            self.second < rhs.second)</code></pre>
+
+                        <h3 class="dark:text-gray-200">Integracja z Pythonem</h3>
+                        <p>W mojo możesz importować
+                            dowolny moduł Pythona do swojego programu.
+
+                        </p>
+                        <pre><code>from PythonInterface import Python
+
+# Odpowiednik `import numpy as np` z Pythona
+let np = Python.import_module("numpy")
+ 
+# Teraz można użyc numpy tak samo jak w Pythonie
+array = np.array([1, 2, 3])
+print(array)</code></pre>
+                        <p>Typy Pythona w Mojo</p>
+                        <pre><code>def type_printer(my_list, my_tuple, my_int, my_string, my_float):
+    print(type(my_list))
+    print(type(my_tuple))
+    print(type(my_int))
+    print(type(my_string))
+    print(type(my_float))
+</code></pre>
+
+                        <h2 class="dark:text-white">Podsumowanie</h2>
+                        <p>Podsumowując, Mojo może być jedną z najbardziej obiecujących nowości w świecie programowania.
+                            Dzięki prostocie i bibliotekom języka Python, programiści będą mogli tworzyć szybkie
+                            aplikacje, które będą kompatybilne z różnymi urządzeniami, dzięki kompilatorowi MLIR. To
+                            otwiera nowe możliwości dla twórców oprogramowania i może przynieść rewolucję w dziedzinie
+                            programowania.
+                        </p>
+                    </div>
+                </div>
+        </article>
+    </section>
+</div>

@@ -4,20 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>datachaint - {{ page.title }}</title>
-  <meta name="author" content="datachaint">
+  <title>dwnajdz - {{ page.title }}</title>
+  <meta name="author" content="dawidnajdz">
   <meta name="description"
-    content="Polski blog dotyczący najnowszych trendów i rozwiązań w dziedzinie analizy danych. Znajdź porady, informacje i przykłady z różnych branż, które pomogą Ci lepiej zrozumieć i wykorzystać potencjał swoich danych. Dołącz do naszej społeczności już dziś!">
+    content="Dawid Najdzionek portfolio data-science data-scientist cloud-engineer data-architect programista polska programmer">
   <meta name="google-site-verification" content="IucEb3g3q-ovhBabaKx2h9miBzDfnl0Z34EKIVq1jdc" />
-   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W79LEFS13H"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV67HQZNEY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-W79LEFS13H');
+    gtag('config', 'G-ZV67HQZNEY');
   </script>
+
 
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <!-- Tailwind -->
@@ -47,83 +49,37 @@
 </head>
 
 <body class="bg-white font-family-karla dark:bg-neutral-900 mode-dark">
-  <!-- Topic Nav -->
-  <nav class="sticky top-0 absolute w-full transition-all duration-10 z-50">
-    <div class="w-full mx-auto bg-gray-50 border-b dark:bg-neutral-900 dark:border-neutral-800">
-      <div x-data="{ open: false }"
-        class="relative flex flex-col w-full p-2 mx-auto bg-white dark:bg-neutral-900 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-        <div class="flex flex-row items-center justify-between lg:justify-start">
-          <a class="text-lg tracking-tight text-black dark:text-gray-100 uppercase focus:outline-none focus:ring lg:text-2xl"
-            href="index.html">
-            datachaint
-          </a>
-          <button @click="open = !open"
-            class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black md:hidden">
-            <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-              <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+  <!-- ========== HEADER ========== -->
+  <header
+    class="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-neutral-900 dark:border-neutral-700">
+    <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      aria-label="Global">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-xl font-semibold dark:text-white" href="index.html" aria-label="dwnajdz">dwnajdz</a>
+        <div class="sm:hidden">
+          <button type="button"
+            class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+            data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </button>
         </div>
-        <nav :class="{'flex': open, 'hidden': !open}"
-          class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
-          <!--
-          <div class="hidden mx-10 md:block lg:ml-auto">
-            <div class="relative">
-              <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </span>
-
-              <input type="text"
-                class="w-full py-2 pl-10 pr-4 text-black border border-gray-200 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-500 sm:text-sm rounded-xl placeholder:text-gray-400 focus:border-blue-500"
-                placeholder="Search">
-            </div>
-          </div>
-          -->
-        </nav>
       </div>
-      <div
-        class="w-full mx-auto bg-gray-50 border-b opacity-95 dark:shadow-xl text-gray-500 dark:text-gray-100 dark:border-neutral-800 dark:bg-neutral-900">
+      <div id="navbar-collapse-with-animation"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block [--scrollspy-offset:70]">
         <div
-          class="flex items-center justify-between w-full px-8 overflow-y-auto border-t whitespace-nowrap scroll-hidden md:px-6 dark:border-neutral-800">
-          <a class="py-4 pr-2 text-md  transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="index.html">
-            Strona Główna
-          </a>
-          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="blog.html">
-            Blog
-          </a>
-          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="dict.html">
-            Nauka
-          </a>
-          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="kariera.html">
-            Kariera
-          </a>
-          <!--
-          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="">
-            Kalkulator Zarobków
-          </a>
-          -->
-          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="analiza.html">
-            Raport branży Data Science
-          </a>
-            <!--
-          <a class="px-2 py-4 text-md transition ease-in-out transform border-b-2 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-blue-500 hover:text-blue-600"
-            href="">
-            Quiz
-          </a>
-             -->
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
+          <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400"
+            href="/">Home</a>
+
           <button id="theme-toggle" type="button"
             class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
             <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
@@ -139,123 +95,41 @@
           </button>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
 
   <!-- CONTENT -->
   {{ content }}
-
   <hr class="dark:hidden">
-  <footer class="mt-12" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="px-5 py-12 mx-auto max-w-7xl lg:py-16 md:px-12 lg:px-20">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="xl:col-span-1">
-          <a href="/"
-            class="text-lg font-bold tracking-tighter transition duration-500 ease-in-out transform text-black tracking-relaxed lg:pr-8">
-            <img src="./images/logo.png" class="w-21 h-21" alt="invAsia">
+  <footer class="bg-white dark:bg-neutral-900">
+    <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
+      <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+        <div class="px-5 py-2">
+          <a href="/" class="text-sm text-gray-500 hover:text-blue-600">
+            Home
           </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="font-semibold leading-6 uppercase text-black dark:text-gray-200">
-                ARTYKUŁY
-              </h3>
-              <ul role="list" class="mt-4 space-y-3 text-gray-500 dark:text-gray-300">
-                <li>
-                  <a href="blog.html" class="text-sm hover:text-blue-600">
-                    Ostatnio dodane
-                  </a>
-                </li>
-                <li>
-                  <a href="dict.html" class="text-sm hover:text-blue-600">
-                    Nauka
-                  </a>
-                </li>
-                <li>
-                  <a href="kariera.html" class="text-sm hover:text-blue-600">
-                    Zawody w branży danych
-                  </a>
-                  <a href="analiza.html" class="text-sm hover:text-blue-600">
-                    Raport z branży danych
-                  </a>
-                </li>
-                <li>
-                  <!--
-                  <a href="" class="text-sm hover:text-blue-600">
-                    Quiz
-                  </a>
-                  -->
-                </li>
-              </ul>
-            </div>
-            <div class="mt-12 md:mt-0">
-              <h3 class="font-semibold leading-6 uppercase text-black dark:text-gray-200">
-                Pomoc
-              </h3>
-              <ul role="list" class="mt-4 space-y-4 text-gray-500 dark:text-gray-300">
-                <li>
-                  <a href="index.html#faq" class="text-sm hover:text-blue-600">
-                    O nas
-                  </a>
-                </li>
-                <li>
-                  <a href="index.html#kontakt" class="text-sm hover:text-blue-600">
-                    Kontakt
-                  </a>
-                </li>
-                <li>
-                  <a href="index.html#faq" class="text-sm hover:text-blue-600">
-                    Zgłoś
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--
-          <div class="hidden lg:justify-end md:grid md:grid-cols-1">
-            <div class="w-full mt-12 md:mt-0">
-              <div class="mt-8 lg:justify-end xl:mt-0">
-                <h3 class="font-semibold leading-6 uppercase text-black dark:text-gray-200">
-                  Zapisz sie do newslettera.
-                </h3>
-                <p class="mt-4 text-sm font-light text-gray-500 lg:ml-auto">
-                  Z każdym nowym postem, będziemy ci wysyłać informacje na twój e-mail.
-                </p>
-                <div class="inline-flex items-center gap-2 mt-12 list-none lg:ml-auto">
-                  <form class="flex flex-col items-center justify-center max-w-sm mx-auto" action="">
-                    <div class="flex flex-col w-full gap-1 mt-3 sm:flex-row">
-                      <input name="email" type="email"
-                        class="block w-full px-4 py-2 text-sm font-medium text-gray-800 placeholder-gray-400 bg-white border border-gray-300 rounded-full font-spline focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-600/50 disabled:opacity-50"
-                        placeholder="Wpisz swój email..." required=""><button type="button"
-                        class="items-center inline-flex  justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
-                        <div style="position: relative"></div>
-                        Subskrybuj
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                          aria-hidden="true" class="w-4 h-auto ml-2">
-                          <path fill-rule="evenodd"
-                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                            clip-rule="evenodd"></path>
-                        </svg>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    <div class="px-5 py-12 mx-auto border-t max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-20">
-      <div class="mt-8 md:mt-0 md:order-1">
-        <span class="mt-2 text-sm font-light text-gray-500">
-          Copyright © 2023
-          <a href="#" class="mx-2 text-wickedblue hover:text-gray-500" rel="noopener noreferrer">@datachaint</a> Twoja
-          zatoka danych.
+      </nav>
+      <div class="flex justify-center mt-8 space-x-6">
+        <span class="inline-flex justify-center w-full gap-3 m-auto md:justify-start md:w-auto">
+          <a class="w-6 h-6 transition fill-black hover:text-blue-500" href="/">
+            <span class="sr-only">
+              Home
+            </span>
+            <ion-icon class="w-5 h-5 md hydrated" name="logo-github" role="img" aria-label="logo github"></ion-icon>
+          </a>
         </span>
       </div>
+      <p class="mt-8 text-center">
+        <span class="mx-auto mt-2 text-sm text-gray-500">
+          Copyright © 2023
+          <a href="" class="mx-2 text-blue-500 hover:text-gray-500" rel="noopener noreferrer">
+            dawidnajdz@gmail.com
+          </a>
+          +48 693 521 481
+        </span>
+      </p>
     </div>
   </footer>
 

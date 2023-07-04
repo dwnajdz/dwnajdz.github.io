@@ -12,7 +12,7 @@ title: MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji
 
                         <p class="mt-2">
                             <time class="text-md text-gray-500 dark:text-white" datetime="2023-05-6">
-                                Maj 6, 2023
+                                Czerwiec 25, 2023
                             </time>
                             <time class="ml-2 dark:text-gray-400" title="Czas przeczytania artykułu">15 min</time>
                         </p>
@@ -47,9 +47,9 @@ title: MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji
                             umożliwia przetwarzanie kodu na każdym z tych poziomów, co umożliwia dostosowanie go do
                             różnych platform sprzętowych.
                             <br><br>
-                            MLIR jest modułowy, co oznacza, że programiści mogą dodawać nowe transformacje i optymalizacje do frameworku. 
-                            Moduły te nazywane są "dialects" (dialektami) i umożliwiają dostosowanie 
-                            MLIR do różnych języków programowania i architektur sprzętowych.
+                            Działanie MLIR opiera się na modularnej strukturze, która umożliwia programistom dodawanie
+                            nowych transformacji i optymalizacji do frameworku. Moduły te są nazywane "dialects" i
+                            umożliwiają dostosowanie MLIR do różnych języków programowania i architektur sprzętowych.
                             <br><br>
                             MLIR umożliwia programistom tworzenie programów w taki sposób, aby działały one szybciej i
                             wydajniej na różnych urządzeniach. Dzięki MLIR możliwe jest na przykład automatyczne
@@ -58,18 +58,9 @@ title: MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji
                             <br><br>
                             MLIR składa się z różnych narzędzi i bibliotek, takich jak kompilatory, optymalizatory i
                             symulatory, które umożliwiają programistom przetwarzanie i optymalizowanie kodu dla różnych
-                            architektur sprzętowych.  MLIR jest dostępny jako otwarte oprogramowanie (open source), co oznacza, 
-                            że każdy może go używać i modyfikować, aby dostosować go do swoich potrzeb.
+                            architektur sprzętowych. MLIR jest dostępny jako otwarte oprogramowanie (open source), co
+                            umożliwia jego rozwijanie i modyfikowanie przez społeczność programistów.
                         </p>
-                        <h3 class="dark:text-white">To oznacza, że aplikacja na windows 10, po zastosowaniu MLIR będzie działała na linuxie?</h3>
-                        <p>MLIR sam w sobie nie służy do przenoszenia aplikacji między różnymi systemami operacyjnymi, 
-                            a jedynie do optymalizacji i generowania kodu.
-                             <br><br>
-                            Jeśli chodzi o przenoszenie aplikacji między systemami operacyjnymi Windows 10 a Linux, to jest to możliwe, ale wymaga to modyfikacji kodu aplikacji tak, aby działała na nowym systemie. 
-                            Przenoszenie aplikacji jest procesem skomplikowanym i zależnym od wielu czynników, takich jak zależności bibliotek i różnice w sposobie działania systemów operacyjnych.
-                            <br><br>
-                            Podsumowując, MLIR nie zapewnia bezpośredniego wsparcia dla przenoszenia aplikacji między Windows 10 a Linux. 
-                            Przenoszenie aplikacji wymaga analizy i modyfikacji kodu aplikacji, a także dostosowania jej do różnic między systemami operacyjnymi.</p>
                         <h2 class="dark:text-white">Prosty kod MLIR w Pythonie</h2>
                         <p>Aby zastosować MLIR w Pythonie, można skorzystać z biblioteki PyMLIR. PyMLIR jest
                             interfejsem Pythona do MLIR i pozwala na łatwe przetwarzanie i optymalizację kodu

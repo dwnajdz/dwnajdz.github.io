@@ -1,1 +1,0 @@
-# wspirrat.github.io

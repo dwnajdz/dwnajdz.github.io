@@ -1,303 +1,942 @@
 ---
-layout: default
-title: Twoja zatoka danych
+layout: index_layout
+title: Home
 ---
-<!-- Text Header -->
-<header class="relative w-full mx-auto bg-cover bg-top bg-fixed"
-  style="background-image: url('./images/background.jpg');">
-  <section class="backdrop-blur-md">
-    <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
-      <div class="relative flex-col items-center m-auto align-middle">
-        <div class="grid grid-cols-1 gap-6 lg:grid-cols-1 lg:gap-24">
-          <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
-            <div class="text-center back">
-              <div>
-                <p class="text-4xl font-medium tracking-tight text-white text-center sm:text-5xl">
-                  Poznaj świat analizy danych
-                </p>
-                <p class="text-lg max-w-xl mt-4 text-center tracking-tight text-gray-200">
-                  Witaj na blogu poświęconym analizie danych! Znajdziesz tutaj wiele interesujących
-                  informacji na temat tego, jak wykorzystuje się narzędzia informatyczne do analizy ogromnych
-                  ilości danych. Poznasz najnowsze trendy, narzędzia i technologie związane z data science. Przygotuj
-                  się na fascynującą podróż po świecie analizy danych!
-                </p>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-center">
-                <a href="blog.html"
-                  class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
-                  Zacznij czytać
-                </a>
-              </div>
-            </div>
-          </div>
-          <!--
-            <div class="order-first block w-full mt-12 aspect-square lg:mt-0">
-              <img class="object-cover object-center w-full mx-auto bg-gray-600 lg:ml-auto rounded-lg" alt="hero"
-                src="./images/logo.png">
-            </div>
-          -->
-        </div>
-      </div>
-      <div>
-        <div class="pt-12 mx-auto lg:max-w-7xl">
-          <dl class="grid grid-cols-1 gap-6 space-y-0 text-center lg:gap-24 lg:grid-cols-3 lg:text-left">
-            <div>
-              <div>
-                <p class="mt-5 text-lg font-medium leading-6 text-white">
-                  Uczenie Maszynowe
-                </p>
-              </div>
-              <div class="mt-2 text-base text-gray-200">
-                Uczenie maszynowe polega na tworzeniu algorytmów i modeli, które mogą uczyć się wzorców z danych i
-                podejmować decyzje. Ma szerokie zastosowanie i jest szybko rozwijającą się dziedziną.
-              </div>
-            </div>
-            <div>
-              <div>
-                <p class="mt-5 text-lg font-medium leading-6 text-white">
-                  Analiza Danych
-                </p>
-              </div>
-              <div class="mt-2 text-base text-gray-200">
-                Analiza danych polega na wyciąganiu wniosków z surowych danych przy użyciu technik statystycznych,
-                eksploracji danych i uczenia maszynowego, umożliwiając podejmowanie decyzji opartych na danych dla
-                firm, badaczy i jednostek indywidualnych.
-              </div>
-            </div>
-            <div>
-              <div>
-                <p class="mt-5 text-lg font-medium leading-6 text-white">
-                  Wizualizacja Danych
-                </p>
-              </div>
-              <div class="mt-2 text-base text-gray-200">
-                Wizualizacja danych umożliwia łatwe interpretowanie i
-                komunikowanie złożonych danych. Umożliwia szybkie i klarowne przekazywanie wniosków, co czyni ją
-                niezbędnym narzędziem do analizy i podejmowania decyzji opartych na danych.
-              </div>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</header>
-
-<section class="flex items-center w-full">
-  <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-20 max-w-7xl">
-    <div class="max-w-2xl">
-      <p class="text-4xl text-black dark:text-gray-100">
-        Ostatnie artykuły.
-      </p>
-      <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600 dark:text-gray-400">
-        <span id="datespan"></span>
-      </p>
-    </div>
-    <div class="grid grid-cols-2 gap-6 py-12 md:grid-cols-3">
-      <figure>
-        <img class="w-full bg-gray-200 "
-          src="https://pbs.twimg.com/media/FNc0Qg9VEAAV5bM?format=png&name=large" alt="" width="1310"
-          height="873">
-
-        <p class="mt-5 text-lg font-medium leading-6 text-black dark:text-gray-100">
-          MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji kompilatorów
-          <br>
-        </p>
-        <p class="mt-2">
-          <time class="text-xs text-gray-500 dark:text-gray-400" datetime="2023-03-16">
-            Maj 6, 2023
-          </time>
-        </p>
-        <p class="mt-3 text-base text-gray-500 dark:text-gray-400">
-          MLIR to nowy framework stworzony przez Google, który zmienia sposób tworzenia aplikacji i narzędzi w
-          dziedzinie uczenia maszynowego. Dzięki temu programiści mogą skupić się na tworzeniu algorytmów, a nie na ich
-          implementacji na różnych platformach. To rewolucja w optymalizacji modeli uczenia maszynowego,
-          która może zmienić grę dla programistów i badaczy.
-        </p>
-        <div class="flex gap-3 mt-10 justify-left">
-          <a class="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600 dark:text-gray-200"
-            href="mlir.html">
-            <span>
-              Przejdź
-              <span aria-hidden="true"> → </span>
-            </span>
-            <ion-icon class="flex-none w-3 h-3 ml-3 fill-blue-600 group-active:fill-current md hydrated"
-              name="arrow-forward-outline" role="img" aria-label="arrow forward outline"></ion-icon>
-          </a>
-        </div>
-      </figure>
-      <figure>
-        <img class="w-full bg-gray-200 " src="./images/jobs/scientist.png" alt="" width="1310" height="873">
-
-        <p class="mt-5 text-lg font-medium leading-6 text-black dark:text-gray-100">
-          Kiedy Excel już nie daje rady - o pracy Data Scientist i jego supermocach
-          <br>
-        </p>
-        <p class="mt-2">
-          <time class="text-xs text-gray-500 dark:text-gray-400" datetime="2023-03-16">
-            Maj 2, 2023
-          </time>
-        </p>
-        <p class="mt-3 text-base text-gray-500 dark:text-gray-400">
-          Kiedy Excel już nie daje rady, to przychodzi Data Scientist. To taki superbohater, który potrafi przetworzyć
-          Twoje zwykłe dane w potężną broń, która przynosi Ci fortunę! A jak nie, to przynajmniej masz trochę więcej
-          papieru toaletowego na zapas.
-        </p>
-        <div class="flex gap-3 mt-10 justify-left">
-          <a class="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600 dark:text-gray-200"
-            href="kariera_data_scientist.html">
-            <span>
-              Przejdź
-              <span aria-hidden="true"> → </span>
-            </span>
-            <ion-icon class="flex-none w-3 h-3 ml-3 fill-blue-600 group-active:fill-current md hydrated"
-              name="arrow-forward-outline" role="img" aria-label="arrow forward outline"></ion-icon>
-          </a>
-        </div>
-      </figure>
-      <figure>
-        <img class="w-full bg-gray-200 " src="./images/jobs/engineer.png" alt="" width="1310" height="873">
-        <p class="mt-5 text-lg font-medium leading-6 text-black dark:text-gray-100">
-          Inżynier danych – czyli kto to taki?
-          <br>
-        </p>
-        <p class="mt-2">
-          <time class="text-xs text-gray-500 dark:text-gray-400" datetime="2023-03-16">
-            Maj 1, 2023
-          </time>
-        </p>
-        <p class="mt-3 text-base text-gray-500 dark:text-gray-400">
-          No dobrze, czyli kto to taki inżynier danych? To taki człowiek, który umie zrobić z chaosu porządek - a jeśli
-          nie umie, to przynajmniej udaje, że umie. Jego supermocą jest znajomość różnych narzędzi i języków
-          programowania, które pozwalają mu przetwarzać gigabajty i terabajty danych w błyskawicznym tempie.
-        </p>
-        <div class="flex gap-3 mt-10 justify-left">
-          <a class="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600 dark:text-gray-200"
-            href="kariera_data_engineer.html">
-            <span>
-              Przejdź
-              <span aria-hidden="true"> → </span>
-            </span>
-            <ion-icon class="flex-none w-3 h-3 ml-3 fill-blue-600 group-active:fill-current md hydrated"
-              name="arrow-forward-outline" role="img" aria-label="arrow forward outline"></ion-icon>
-          </a>
-        </div>
-      </figure>
-    </div>
-
-  </div>
-</section>
-
-<hr class="dark:hidden">
-<section class="bg-gray-50 dark:bg-neutral-800">
-  <div class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
-    <div id="faq">
-      <div class="max-w-2xl">
-        <p class="text-4xl text-black dark:text-gray-100">
-          Często zadawne pytania (FAQ).
-        </p>
-        <p class="max-w-2xl mt-4 text-lg tracking-tight text-gray-600 dark:text-gray-400">
-          Kto pyta nie błądzi
-        </p>
-      </div>
-    </div>
-    <div class="space-y-12">
-      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
-        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
-          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
-            Co to jest za strona?
-          </span>
-        </div>
-        <div class="lg:col-span-2">
-          <p class="text-base text-gray-500 dark:text-gray-300">
-            Datachaint to platforma, której celem jest rozwój branży danych w Polsce poprzez dzielenie się wiedzą i
-            doświadczeniem wśród polskich specjalistów, takich jak danolodzy, finansiści, programiści i inni. Nasza
-            strona to miejsce, w którym można znaleźć artykuły, poradniki, wywiady i inne treści związane z danymi,
-            które pomogą w zrozumieniu i wykorzystaniu ich potencjału w różnych dziedzinach, takich jak biznes, nauka,
-            medycyna czy polityka.
-          </p>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
-        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
-          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
-            Po co nam dane?
-          </span>
-        </div>
-        <div class="space-y-4 lg:col-span-2">
-          <p class="text-base text-gray-500 dark:text-gray-300">
-            Dane są kluczowe, ponieważ pozwalają nam lepiej zrozumieć i analizować różne aspekty naszego życia i świata.
-            Dają nam informacje, które umożliwiają podejmowanie bardziej świadomych decyzji i planowanie przyszłości.
-            Mogą być wykorzystywane do tworzenia nowych rozwiązań, produktów i usług, które poprawiają jakość życia
-            ludzi. Dzięki danym możemy zidentyfikować trendy, przewidywać zachowania ludzi oraz dostarczać bardziej
-            spersonalizowane i efektywne rozwiązania. W dzisiejszych czasach zbieranie, przetwarzanie i analizowanie
-            danych jest niezbędnym narzędziem w wielu dziedzinach, takich jak biznes, nauka, medycyna czy polityka. Bez
-            danych wiele działań byłoby niemożliwych lub znacznie utrudnionych.
-          </p>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
-        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
-          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
-            Jaki jest cel takiej strony?
-          </span>
-        </div>
-        <div class="lg:col-span-2">
-          <p class="text-base text-gray-500 dark:text-gray-300">
-            Naszym celem jest pomaganie w zrozumieniu i wykorzystaniu ogromnego potencjału danych. Dajemy możliwość
-            dzielenia się wiedzą i doświadczeniem z innymi osobami zainteresowanymi tematyką danych, a także
-            prezentowanie różnych perspektyw i podejść do analizy danych. Staramy się stać się wirtualną biblioteką dla
-            osób, które chcą nauczyć się korzystać z danych w swojej pracy lub biznesie. Chcemy inspirować i rozwijać
-            polską społeczność danologiczną, a także promować wartość danych jako narzędzia służącego do podejmowania
-            mądrych decyzji w różnych dziedzinach życia.
-          </p>
-        </div>
-      </div>
-      <div class="grid grid-cols-1 gap-4 pt-4 lg:grid-cols-3 lg:pt-12">
-        <div class="flex flex-col flex-shrink-0 mb-6 lg:pr-12 md:mb-0">
-          <span class="text-lg font-medium leading-6 text-black dark:text-gray-200">
-            Chcesz dodać swój własny artykuł?
-          </span>
-        </div>
-        <div class="lg:col-span-2">
-          <p class="text-base text-gray-500 dark:text-gray-300">
-            Jeżeli chcesz dodać swój własny artykuł, wyślij go na maila datachaint@gmail.com.
-            Postaramy się jak najszybciej go wrzucić na naszą stronę.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="object-top overflow-hidden bg-gray-50 bg-cover dark:bg-neutral-800" id="kontakt">
-  <div>
-    <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
+<main id="scrollspy">
+  <!-- Hero -->
+  <div class="relative overflow-hidden">
+    <!-- Gradients -->
+    <div aria-hidden="true" class="flex absolute -top-96 left-1/2 transform -translate-x-1/2">
       <div
-        class="px-6 py-6 bg-white rounded-3xl md:py-12 md:px-12 lg:px-16 xl:flex xl:items-center dark:bg-neutral-700">
-        <div class="xl:w-0 xl:flex-1">
+        class="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[39rem] rotate-[-50deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900">
+      </div>
+      <div
+        class="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[41rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70">
+      </div>
+    </div>
+    <!-- End Gradients -->
 
-          <p class="text-5xl tracking-tighter text-black dark:text-white">
-            Skontaktuj się z nami!
+    <div class="relative z-10" id="about">
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <div class="max-w-2xl text-center mx-auto">
+          <p
+            class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+            2023
           </p>
-          <p class="max-w-3xl mt-3 text-lg leading-6 text-gray-500 dark:text-gray-300">
-            Wyślij wiadomość na nasz adres email.
-          </p>
-        </div>
-        <div class="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
-          <p class="text-5xl tracking-tighter text-blue-500 ">
-            datachaint@gmail.com
-          </p>
+
+          <!-- Title -->
+          <div class="mt-5 max-w-2xl">
+            <h1 class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
+              Dawid Najdzionek
+            </h1>
+          </div>
+          <!-- End Title -->
+
+          <div class="mt-5 max-w-3xl">
+            <p class="text-lg text-gray-600 dark:text-gray-400">I am a mechatronics student interested in data,
+              finance,<br>
+              cloud, computer science and new technologies.<br>
+              Rather than relying on motivation alone, I prioritize
+              discipline in my
+              approach. <br> I am committed
+              to consistently improve my skills and stay updated with emerging trends.
+            </p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
+            <div data-hs-scrollspy="#scrollspy">
+              <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                href="#portfolio">
+                View my projects
+                <svg class="w-3 h-3" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </div>
+            <a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold text-gray-800 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm dark:text-white dark:hover:bg-gray-800 dark:hover:border-gray-900 dark:focus:ring-gray-900 dark:focus:ring-offset-gray-800"
+              href="dist/resume.pdf" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+              </svg>
+              My Resume (PDF)
+            </a>
+          </div>
+          <blockquote class="relative mt-16">
+            <svg
+              class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-100 dark:text-gray-700"
+              width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path
+                d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"
+                fill="currentColor" />
+            </svg>
+
+            <div class="relative z-10">
+              <p class="text-gray-800 sm:text-xl dark:text-white"><em>
+                  You become what you give your attention to.
+                </em></p>
+            </div>
+
+            <footer class="mt-6">
+              <div class="text-base font-semibold text-gray-800 dark:text-gray-400">Epictetus</div>
+            </footer>
+          </blockquote>
+          <!-- End Buttons -->
         </div>
       </div>
     </div>
   </div>
-</section>
+  <!-- End Hero -->
 
+  <div class="mt-16 max-w-7xl text-center mx-auto mb-10 lg:mb-14" id="contact">
+    <div class="mt-24 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
+      <!-- Linkedin -->
+      <a class="flex flex-col h-full text-center rounded-md hover:bg-gray-100 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+        href="https://www.linkedin.com/in/dawidnajdz/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="w-9 h-9 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
+        <div class="grow">
+          <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">LinkedIn</h3>
+          <p class="mt-1 text-gray-500">Contact with me on LinkedIn platform.</p>
+          <p class="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600 dark:text-blue-500">
+            linkedin/dawidnajdz
+            <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                fill="currentColor" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      <!-- End Linkedin -->
 
-<script>
-  let date = new Date().toLocaleDateString();
-  document.getElementById('datespan').innerHTML = date
-</script>
+      <!-- Github -->
+      <a class="flex flex-col h-full text-center rounded-md hover:bg-gray-100 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+        href="https://github.com/dwnajdz" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="w-9 h-9 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </svg>
+        <div class="grow">
+          <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">GitHub</h3>
+          <p class="mt-1 text-gray-500">See my GitHub account.</p>
+          <p class="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600 dark:text-blue-500">
+            github/dwnajdz
+            <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                fill="currentColor" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      <!-- End Github -->
+
+      <!-- Email -->
+      <a class="flex flex-col h-full text-center rounded-md hover:bg-gray-100 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+        href="mailto:dawidnajdz@gmail.com?Subject=Contact">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="w-9 h-9 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+          <path
+            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+          <path
+            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+        </svg>
+        <div class="grow">
+          <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">E-Mail</h3>
+          <p class="mt-1 text-gray-500">Send me an email message.</p>
+          <p class="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600 dark:text-blue-500">
+            dawidnajdz@gmail.com
+            <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                fill="currentColor" />
+            </svg>
+          </p>
+        </div>
+      </a>
+      <!-- End email-->
+    </div>
+  </div>
+
+  <div class="relative overflow-hidden" id="portfolio">
+    <!-- Gradients -->
+    <div aria-hidden="true" class="flex absolute -top-16 left-1/2 transform -translate-x-1/2">
+      <div class="bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50 blur-3xl w-[90rem] h-[12rem] origin-bottom 
+        dark:from-neutral-800 dark:via-neutral-800 dark:to-neutral-800">
+      </div>
+    </div>
+    <!-- End Gradients -->
+
+    <div class="relative z-10" id="about">
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+        <div class="max-w-2xl text-center mx-auto">
+          <p
+            class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+            github.com/dwnajdz
+          </p>
+
+          <!-- Title -->
+          <div class="mt-5 max-w-2xl">
+            <h1 class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
+              Portfolio
+            </h1>
+          </div>
+          <!-- End Title -->
+
+          <div class="mt-5 max-w-3xl">
+            <p class="text-lg text-gray-600 dark:text-gray-400">View my projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Hero -->
+
+  <!-- Portfolio -->
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div>
+        <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
+          Polish and German car market analysis
+          <p class="mt-3 text-lg text-gray-800 dark:text-gray-400 font-medium">Comprehensive analysis of Polish and
+            German used and new car market using own data scraped from biggest car sales websites in each of these
+            countries.</p>
+
+          <!-- Buttons -->
+          <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://github.com/dwnajdz/analiza_rynku_aut/blob/main/analiza.ipynb" target="_blank">
+              View Jupyter Notebook
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                class="w-4 h-4 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+            <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+              href="https://medium.com/@dwnajdz/analiza-polskiego-i-niemieckiego-rynku-samochod%C3%B3w-6d08cb6af3a2"
+              target="_blank ">
+              Article in Polish
+            </a>
+          </div>
+          <!-- End Buttons -->
+
+          <!-- Skills -->
+          <div class="grid grid-cols-1 gap-x-5">
+            <div class="mb-3">
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Python
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Pandas
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Data Analysis
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Data Cleaning
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Data Visualization
+              </p>
+            </div>
+
+          </div>
+          <!-- End Skills -->
+      </div>
+      <!-- End Col -->
+
+      <div class="relative ml-4">
+        <img class="w-full rounded-md" src="images/analysis.png" alt="Image Description" loading="lazy">
+        <div
+          class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0">
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Portfolio -->
+
+  <!-- Portfolio -->
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-20 relative">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div>
+        <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
+          NoteSaver
+          <p class="mt-3 text-lg text-gray-800 dark:text-gray-400 font-medium">Note saving app written in Python with
+            Flask. This platform contains note search engine, public and private note managment. Dockerized and hosted
+            on AWS EC2.</p>
+
+          <!-- Buttons -->
+          <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://github.com/dwnajdz/flask-notesaver" target="_blank">
+              View Source Code
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                class="w-4 h-4 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+            <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+              href="#">
+              Live Demo
+            </a>
+          </div>
+          <!-- End Buttons -->
+
+          <!-- Skills -->
+          <div class="grid grid-cols-1 gap-x-5">
+            <div class="mb-3">
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Python
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Flask
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Microservices
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                System Design
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Database Managment
+              </p>
+            </div>
+
+          </div>
+          <!-- End Skills -->
+      </div>
+      <!-- End Col -->
+
+      <div class="relative ml-4">
+        <img class="w-full rounded-md" src="images/notesaver.png" alt="Login Example gif" loading="lazy">
+        <div
+          class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0">
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Portfolio -->
+
+  <!-- Portfolio -->
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-20 relative">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div>
+        <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
+          Secure Web Token
+          <p class="mt-3 text-lg text-gray-800 dark:text-gray-400 font-medium"> Standard used to share information
+            between two
+            entities, usually a client (like your app's frontend) and a
+            server (your app's backend).</p>
+
+          <!-- Buttons -->
+          <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://github.com/dwnajdz/swt" target="_blank">
+              View Source Code
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                class="w-4 h-4 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+            <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+              href="#">
+              Live Demo
+            </a>
+          </div>
+          <!-- End Buttons -->
+
+          <!-- Skills -->
+          <div class="grid grid-cols-1 gap-x-5">
+            <div class="mb-3">
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Go
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Cryptography
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Networking
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Cloud Development
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Json-Web Token
+              </p>
+            </div>
+
+          </div>
+          <!-- End Skills -->
+      </div>
+      <!-- End Col -->
+
+      <div class="relative ml-4">
+        <img class="w-full rounded-md" src="https://github.com/dwnajdz/swt/raw/master/login_example.gif"
+          alt="Login Example gif" loading="lazy">
+        <div
+          class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0">
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Portfolio -->
+
+  <!-- Portfolio -->
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div>
+        <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
+          Homestorage
+          <p class="mt-3 text-lg text-gray-800 dark:text-gray-400 font-medium">Home file storing system written in Go
+            that utilizes SWT library for user authentication, hosted on AWS EC2.</p>
+
+          <!-- Buttons -->
+          <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://github.com/dwnajdz/homestorage/tree/deploy" target="_blank">
+              View Source Code
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                class="w-4 h-4 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+            <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+              href="#">
+              Live Demo
+            </a>
+          </div>
+          <!-- End Buttons -->
+
+          <!-- Skills -->
+          <div class="grid grid-cols-1 gap-x-5">
+            <div class="mb-3">
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Go
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Cloud Development
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Amazon Web Services
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Docker
+              </p>
+            </div>
+
+          </div>
+          <!-- End Skills -->
+      </div>
+      <!-- End Col -->
+
+      <div class="relative ml-4">
+        <img class="w-full rounded-md" src="https://github.com/dwnajdz/homestorage/raw/main/homestorage_gif.gif"
+          loading="lazy" alt="Homestorage gif">
+        <div
+          class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0">
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Portfolio -->
+
+  <!-- Portfolio -->
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div>
+        <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
+          Version-Control Rust (vcrs)
+          <p class="mt-3 text-lg text-gray-800 dark:text-gray-400 font-medium"> Version control system written in rust,
+            similiar to Git.</p>
+
+          <!-- Buttons -->
+          <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://github.com/dwnajdz/vcrs" target="_blank">
+              View Source Code
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                class="w-4 h-4 text-gray-800 mx-auto dark:text-gray-200" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+          </div>
+          <!-- End Buttons -->
+
+          <!-- Skills -->
+          <div class="grid grid-cols-1 gap-x-5">
+            <div class="mb-3">
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Rust
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Version Control System
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                File managment
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                JSON
+              </p>
+            </div>
+
+          </div>
+          <!-- End Skills -->
+      </div>
+      <!-- End Col -->
+
+      <div class="relative ml-4">
+        <img class="w-full rounded-md" src="https://github.com/dwnajdz/vcrs/raw/main/vrsc.gif" alt="Image Description"
+          loading="lazy">
+        <div
+          class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0">
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Portfolio -->
+
+  <!-- Portfolio -->
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div>
+        <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
+          Germany Used Cars Dataset
+          <p class="mt-3 text-lg text-gray-800 dark:text-gray-400 font-medium">Collection of car offers from one of
+            Germany's largest car sales websites, AutoScout24. This scraped dataset contains a wide range of information
+            about car offers, covering a cars manufactured from 1995 to 2023.</p>
+
+          <!-- Buttons -->
+          <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              href="https://www.kaggle.com/datasets/wspirat/germany-used-cars-dataset-2023" target="_blank">
+              View Dataset on
+              <img src="https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg" class="w-12 h-6">
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+          </div>
+          <!-- End Buttons -->
+
+          <!-- Skills -->
+          <div class="grid grid-cols-1 gap-x-5">
+            <div class="mb-3">
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Python
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Scrapy
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Data Collection
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Rotating Proxy
+              </p>
+              <p
+                class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                Apache Airflow
+              </p>
+            </div>
+
+          </div>
+          <!-- End Skills -->
+      </div>
+      <!-- End Col -->
+
+      <div class="relative ml-4">
+        <img class="w-full rounded-md" src="images/data.png" alt="Image Description" loading="lazy">
+        <div
+          class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0">
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Portfolio -->
+
+  <!-- Icon Blocks -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-20">
+    <h2 class="block font-semibold text-gray-800 text-2xl md:text-5xl lg:text-3xl dark:text-gray-200 mb-12 text-center">
+      Additional projects
+    </h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-2">
+      <!-- Icon Block -->
+      <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800"
+        href="https://www.kaggle.com/datasets/wspirat/poland-used-cars-offers" target="_blank">
+        <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+          </svg>
+        </div>
+        <div class="mt-5">
+          <h3
+            class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
+            Data Collection/Web Scraping</h3>
+          <p class="mt-1 text-gray-600 dark:text-gray-400">I collected data from largest polish website otomoto.pl with
+            usage of
+            scrapy and python.</p>
+          <span
+            class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
+            View Dataset
+            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </div>
+      </a>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800"
+        href="https://github.com/dwnajdz/linear-regression" target="_blank">
+        <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+          </svg>
+        </div>
+        <div class="mt-5">
+          <h3
+            class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
+            Linear regression model with gradient descent</h3>
+          <p class="mt-1 text-gray-600 dark:text-gray-400">Simple linear regression model in Python with gradient
+            descent.</p>
+          <span
+            class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
+            View code
+            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </div>
+      </a>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800"
+        href="https://github.com/dwnajdz/trashkv" target="_blank">
+        <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+          </svg>
+        </div>
+        <div class="mt-5">
+          <h3
+            class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
+            TrashKV</h3>
+          <p class="mt-1 text-gray-600 dark:text-gray-400">Simple key-value store written in Go, that stores data on
+            HTTP server.</p>
+          <span
+            class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
+            View code
+            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </div>
+      </a>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <a class="group flex flex-col justify-center hover:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-slate-800"
+        href="https://github.com/dwnajdz/lyra" target="_blank">
+        <div class="flex justify-center items-center w-12 h-12 bg-blue-600 rounded-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+
+        </div>
+        <div class="mt-5">
+          <h3
+            class="group-hover:text-gray-600 text-lg font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400">
+            Lyra</h3>
+          <p class="mt-1 text-gray-600 dark:text-gray-400">Virtual investing portfolio that allows you to invest in
+            stock exchange.</p>
+          <span
+            class="mt-2 inline-flex items-center gap-x-1.5 text-sm text-blue-600 decoration-2 group-hover:underline font-medium">
+            View Code
+            <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </div>
+      </a>
+      <!-- End Icon Block -->
+    </div>
+  </div>
+  <!-- End Icon Blocks -->
+
+  <!-- Title -->
+  <div class="mt-16 max-w-2xl text-center mx-auto mt-24" id="blog">
+    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Blog</h2>
+    <p class="mt-1 text-gray-600 dark:text-gray-400">Read latest posts on my blog page written in Polish language.
+    </p>
+  </div>
+  <!-- End Title -->
+
+  <!-- Card Blog -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid lg:grid-cols-2 gap-6">
+      <!-- Card -->
+      <a class="group relative block" href="mlir.html">
+        <div
+          class="flex-shrink-0 relative w-full rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:w-full before:h-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+          <img class="w-full h-full absolute top-0 left-0 object-cover"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/65ca620f-268e-4144-a9d0-b4ee2a824fdf/d3av113-048cc6aa-bd9b-4e6d-aa13-17ab7ee6bde2.png/v1/fill/w_900,h_675,q_80,strp/llvm_wallpaper_and_svg_by_mcandre_d3av113-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njc1IiwicGF0aCI6IlwvZlwvNjVjYTYyMGYtMjY4ZS00MTQ0LWE5ZDAtYjRlZTJhODI0ZmRmXC9kM2F2MTEzLTA0OGNjNmFhLWJkOWItNGU2ZC1hYTEzLTE3YWI3ZWU2YmRlMi5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.AbFf_bR7Br_tAThPDa5IzQaFgbB93gO5Nt8CDUs4O1Y"
+            alt="mlir">
+        </div>
+
+        <div class="absolute top-0 inset-x-0 z-10">
+          <div class="p-4 flex flex-col h-full sm:p-6">
+            <!-- Avatar -->
+            <div class="flex items-center">
+              <div class="ml-2.5 sm:ml-4">
+                <h4 class="font-semibold text-white">
+                  Dawid
+                </h4>
+                <p class="text-xs text-white/[.8]">
+                  June 25, 2023
+                </p>
+              </div>
+            </div>
+            <!-- End Avatar -->
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 inset-x-0 z-10">
+          <div class="flex flex-col h-full p-4 sm:p-6">
+            <h3 class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8]">
+              MLIR - jak nowy framework Google zmienia grę w tworzeniu i optymalizacji kompilatorów (PL)
+            </h3>
+            <p class="mt-2 text-white/[.8]">
+              Czym jest MLIR i jak działa, oraz gdzie jest używany?
+            </p>
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+
+      <!-- Card -->
+      <a class="group relative block" href="mojo_lang.html">
+        <div
+          class="flex-shrink-0 relative w-full rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:w-full before:h-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+          <img class="w-full h-full absolute top-0 left-0 object-cover"
+            src="https://assets-global.website-files.com/63f9f100025c058594957cca/644c98b52c78b418f48de3dc_Mojo%20White%20Background%20(2).png"
+            loading="lazy" alt="mojo lang">
+        </div>
+
+        <div class="absolute top-0 inset-x-0 z-10">
+          <div class="p-4 flex flex-col h-full sm:p-6">
+            <!-- Avatar -->
+            <div class="flex items-center">
+              <div class="ml-2.5 sm:ml-4">
+                <h4 class="font-semibold text-black">
+                  Dawid
+                </h4>
+                <p class="text-xs text-black">
+                  June 25, 2023
+                </p>
+              </div>
+            </div>
+            <!-- End Avatar -->
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 inset-x-0 z-10">
+          <div class="flex flex-col h-full p-4 sm:p-6">
+            <h3 class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8]">
+              Mojo 🔥 - nowy język programowania, łatwy jak python szybki jak C
+            </h3>
+            <p class="mt-2 text-white/[.8]">
+              Język programowania dla AI
+            </p>
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Card Blog -->
+
+  <!-- Card Blog -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
+      <!-- Card -->
+      <a class="group rounded-xl overflow-hidden"
+        href="https://medium.com/@dwnajdz/analiza-polskiego-i-niemieckiego-rynku-samochod%C3%B3w-6d08cb6af3a2"
+        target="_blank">
+        <div class="sm:flex">
+          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+            <img
+              class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
+              src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*9U1dFD71-aaRl6Q2icNL9g.png"
+              alt="Image Description">
+          </div>
+
+          <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
+            <h3
+              class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-300 dark:group-hover:text-white">
+              Analiza polskiego i niemieckiego rynku samochodów (@medium.com)
+            </h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400">
+              Analiza trendów, oraz stanu polskiego i niemieckiego rynku samochodów. Na podstawie samodzielnie zebranych
+              danych.
+            </p>
+            <p class="mt-4 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
+              Read more
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </p>
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+
+      <!-- Card -->
+      <a class="group rounded-xl overflow-hidden" href="ukraina.html">
+        <div class="sm:flex">
+          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
+            <img
+              class="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl"
+              src="https://wykop.pl/cdn/c3397993/b8cb7e9db8838d250312ee3b0c035b538d7115335c9a76349a5c71fb364eea99,w600h388.png"
+              alt="Image Description">
+          </div>
+
+          <div class="grow mt-4 sm:mt-0 sm:ml-6 px-4 sm:px-0">
+            <h3
+              class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-300 dark:group-hover:text-white">
+              Nauka języka polskiego przez ukraińskich uczniów w Polsce
+            </h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400">
+              Analiza danych opublikowanych przez polski rząd dotyczących dodatkowych lekcji języka polskiego dla
+              ukraińskich uczniów.
+            </p>
+            <p class="mt-4 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
+              Read more
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </p>
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
+
+    </div>
+    <!-- End Grid -->
+    <!-- Card -->
+    <div class="mt-12 text-center">
+      <a class="inline-flex justify-center items-center gap-x-2 text-center bg-white border hover:border-gray-300 text-sm text-blue-600 hover:text-blue-700 font-medium hover:shadow-sm rounded-full focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:bg-slate-900 dark:border-gray-700 dark:hover:border-gray-600 dark:text-blue-500 dark:hover:text-blue-400 dark:hover:shadow-slate-700/[.7] dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
+        href="https://medium.com/@dwnajdz" target="_blank">
+        My @medium account
+        <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </a>
+    </div>
+    <!-- End Card -->
+  </div>
+  <!-- End Card Blog -->
+</main>
